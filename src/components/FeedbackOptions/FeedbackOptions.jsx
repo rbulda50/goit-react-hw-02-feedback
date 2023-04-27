@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types';
 import './FeedbackOptions.jsx';
-
 
 const FeedbackOptions = ({ onLeaveFeedback, options }) => {
     const OptionKeys = Object.keys(options);

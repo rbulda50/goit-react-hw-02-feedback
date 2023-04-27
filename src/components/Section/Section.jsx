@@ -1,7 +1,3 @@
-import { Children } from "react";
-
-
-
 const Section = ({ title, children }) => {
     return (
         <section className="Section__container">

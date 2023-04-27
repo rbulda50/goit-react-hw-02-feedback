@@ -1,8 +1,8 @@
 import './FeedbackOptions.jsx';
+import firstLetterToUpperCase from './FirstLetterToUpperCase.js';
 
 const FeedbackOptions = ({ onLeaveFeedback, options }) => {
     const OptionKeys = Object.keys(options);
-
     return (
         <div className='FeedbackOptions__container'>
             {OptionKeys.map(option => (
@@ -12,7 +12,7 @@ const FeedbackOptions = ({ onLeaveFeedback, options }) => {
                     type="button"
                     name={option}
                     onClick={onLeaveFeedback}
-                >{option}</button>
+                >{firstLetterToUpperCase(option)}</button>
             ))}
         </div>
     )

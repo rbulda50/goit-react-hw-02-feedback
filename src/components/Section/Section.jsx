@@ -1,10 +1,17 @@
+import PropTypes from 'prop-types';
+
 const Section = ({ title, children }) => {
     return (
-        <section className="Section__container">
-            <h1 className="Section__title">{title}</h1>
+        <section>
+            <h1>{title}</h1>
             {children}
         </section>
     )
 };
 
 export default Section;
+
+Section.propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.element.isRequired,
+};
